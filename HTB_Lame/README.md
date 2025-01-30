@@ -33,9 +33,9 @@ results:
 Failed to establish a shell.
 ![[exploit_vsftpd.png]]
 
-![[img/searchsploit_samba.png]]
+![](img/searchsploit_samba.png)
 1 available in metasploit:
-![[./img/msf_search_samba.png]]
+![](./img/msf_search_samba.png)
 Successful becoming root.
 ![](./img/root.png)
 
