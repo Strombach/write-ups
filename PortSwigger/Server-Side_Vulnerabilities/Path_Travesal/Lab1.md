@@ -30,7 +30,7 @@ The request is made to ```/image``` path with the query string ```filename={name
 Sending this request to the Repeater to change the query string easier.
 
 I enter the file requested in the lab description. /etc/passwd and the file can't be found.
-![](./img/Path_traversal.png)
+![](Path_traversal.png)
 
 By adding the sequence ```../``` before the file name to step up on level in the directory structure we can traverse through the file tree and search for the file requested.
 
