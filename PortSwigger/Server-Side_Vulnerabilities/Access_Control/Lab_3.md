@@ -117,8 +117,8 @@ X-Frame-Options: SAMEORIGIN
 Content-Length: 0
 ```
 
-![](Solved_the_Lab.png)
+![](./img/Solved_the_Lab.png)
 
 ## Alternative:
 We could also, after login, change the cookie value in the browser to get access to the Admin panel link and delete the user through the browser.  
-![](Cookie_Browser_Alternative_Lab_2.png)
+![](./img/Cookie_Browser_Alternative_Lab_2.png)

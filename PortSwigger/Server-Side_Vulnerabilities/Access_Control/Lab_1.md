@@ -104,4 +104,4 @@ X-Frame-Options: SAMEORIGIN
 Content-Length: 0
 ```
 We get a 302 which redirects us back to the admin panel with the message  
-![](Deleted_User_Successfully.png)
+![](./img/Deleted_User_Successfully.png)
