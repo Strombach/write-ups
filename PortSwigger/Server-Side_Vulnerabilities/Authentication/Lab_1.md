@@ -8,4 +8,4 @@ To solve the lab, enumerate a valid username, brute-force this user's password, 
 
 # Solution
 Accessing the login page and entering a random password to get the endpoint into Burpsuite.  
-![[img/Lab_1_First_Access.png]]
+![[./img/Lab_1_First_Access.png]]
