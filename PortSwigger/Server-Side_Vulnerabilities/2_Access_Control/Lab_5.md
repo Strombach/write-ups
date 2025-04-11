@@ -10,9 +10,17 @@ Start with login in with provided credentials
 
 ![](../img/Lab_5_Login.png)
 ![](../img/Lab_5_Login_Account_Request.png)
+
+
 Trying to change request to ```?id=admin```  
+
+
 ![](../img/Lab_5_Try_Admin.png)
-This didn't work, got redirected back to the login page.  
+
+
+This didn't work, got redirected back to the login page. 
+
+
 ![](../img/Lab_5_Login_Page.png)
 
 
