@@ -8,7 +8,7 @@ To solve the lab, perform a SQL injection attack that causes the application to 
 By navigating through the site we get an endpoint called "filter" that has a parameter called "category" that fetches the selected category.   
 ![](./img/Lab_1_FIlter_endpoint.png)
 
-And by adding ```'+OR+1=1--``` as value to the ```category``` parameter we get a long list with all the products.  
+And by adding ```' OR 1=1--``` as value to the ```category``` parameter we get a long list with all the products.  
 ![](./img/Lab_1_SQLi_request.png)
 
 
