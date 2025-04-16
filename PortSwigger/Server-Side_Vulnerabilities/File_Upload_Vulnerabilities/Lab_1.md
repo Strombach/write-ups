@@ -8,28 +8,27 @@ You can log in to your own account using the following credentials: wiener:peter
 
 # Solution
 When using the provided credentials we can see a form for uploading a avatar for the account.  
-![](Lab_1_First_Login.png)
+![](./img/Lab_1_First_Login.png)
 
 
 We start by uploading an image to see how the request and what the proper functionality looks like.  
-![Only headers and beginning of body due to the size of the request](Pasted%20image%2020250416100939.png)
+![](./img/Lab_1_Upload_req_res.png)
 
 
 And we can see that the name of the uploaded file is kept and we can access the file with the path seen in the URL field of the browser (```/files/avatars```).  
-![](Pasted%20image%2020250416101450.png)
-
+![](./img/Lab_1_Testing_upload.png)
 
 Let's see if how we can upload a PHP script to solve the lab. We start by creating a PHP file containing this one line: ```<?php echo system($_GET['command']); ?>```
 And we seem to be successful.  
-![](Lab_1_PHP_script_uploaded.png)
+![](./img/Lab_1_PHP_script_uploaded.png)
 
 
 And we have a working webshell where we can execute system commands (in this case "id"):  
-![](Lab_1_Testing_command.png)
+![](./img/Lab_1_Testing_command.png)
 
 
 Using the cat command we can get the content of the file requested in the lab instructions.  
-![](Lab_1_Getting_secret.png)
+![](./img/Lab_1_Getting_secret.png)
 
 
-![](PortSwigger/Server-Side_Vulnerabilities/File_Upload_Vulnerabilities/img/Lab_1_Solved.png)
+![](./img/Lab_1_Solved.png)
