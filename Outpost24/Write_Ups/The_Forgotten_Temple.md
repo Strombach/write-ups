@@ -1,9 +1,9 @@
 # Intro
-![](The_Forgotten_Temple.png)
+![](../img/The_Forgotten_Temple.png)
 
 # Information gathering
 When entering the user is presented with a login form with some text giving away some hint of credentials ```Anubis``` and  ```deathgod123```.   
-![](The_Forgotten_Temple_Login_Form%201.png)
+![](../img/The_Forgotten_Temple_Login_Form%201.png)
 
 Clicking the button "The Scroll of Gods" downloads a text file named ```usernames.txt``` that contains a list of usernames with one name on each line.  
 Part of the list:
@@ -156,13 +156,13 @@ The body of the request contains the username and the new password. Could this u
 # Attack
 
 Using the list of username the Intruder in BurpSuite is a perfect way to find what usernames are valid or which are not. Enter the list of username and add the ```§``` where the name should be put in each request and press start attack. 
-![](The_Forgotten_Temple__Setup_Intruder.png)
+![](../img/The_Forgotten_Temple__Setup_Intruder.png)
 
 After running the intruder there are two responses that differs from the others.
 - Anubis - which was known to exist
 - Khonsu - newly found username
 
-![](The_Forgotten_Temple_Intruder.png)
+![](../img/The_Forgotten_Temple_Intruder.png)
 
 ```http
 POST /reset-password HTTP/1.1
@@ -194,6 +194,6 @@ Connection: close
 
 Using the newly changed password it's now possible to login in as the user ```Khonsu``` and the flag is displayed.
 
-![](The_Forgotten_Temple_Solved.png)
+![](../img/The_Forgotten_Temple_Solved.png)
 
 ```Flag: O24{73mp13_53cr37s_Unv31l3d}```
