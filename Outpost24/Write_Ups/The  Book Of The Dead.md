@@ -2,7 +2,7 @@
 ![](../img/TBOTD.png)
 
 # Information gathering
-Accessing the site displays a input field. Entering some text and submitting returns the content as part of a longer string / story in the "result-container".
+Accessing the site displays a input field. Entering any text and submitting returns the content as part of a longer string / story in the "result-container".
 ![](../img/TBOTD_App.png)
 
 When entering a text in the input field a ```POST``` request is made with a parameter in the body called ```name```.
@@ -37,7 +37,7 @@ The applications seems to handle special characters as just text in the app. The
 ![](../img/TBOTD_Special_character.png)
 
 
-But when entering a semicolon before the content something interesting is displayed in the page source. A "System Log" is returned with the results of the command.  
+But when entering a semicolon before the content something interesting is displayed in the page source. A "System Log" is returned with the results of the command. This could be a feature added by the developer for debugging or easy access to the server. Or it could be a bug or unsafe function in the application and the semicolon breaks out of the function executing and executing the command entered after the semicolon.  
 ![](../img/TBOTD_Semicolon_system_log.png)
 
 # Attack
