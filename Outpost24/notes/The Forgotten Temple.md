@@ -1,4 +1,4 @@
-![](The_Forgotten_Temple_Login_Form.png)
+![](Outpost24/img/The_Forgotten_Temple_Login_Form.png)
 
 Clicking "The Scroll of Gods" button we download a txt file called usernames.txt
 
@@ -11,10 +11,7 @@ In page source:
 ```html
        <!-- Right section: Login + Password Reset (for Anubis) -->
         <div class="form-section">
-            
-
             <!-- LOGIN FORM -->
-            
                 <form method="POST">
                     <label>Username:</label>
                     <input type="text" name="username" required><br>
@@ -22,7 +19,6 @@ In page source:
                     <input type="password" name="password" required><br>
                     <button type="submit">Enter the Temple</button>
                 </form>
-            
         </div>
     </div>
     <script>
