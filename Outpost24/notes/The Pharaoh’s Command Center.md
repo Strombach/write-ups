@@ -2,7 +2,7 @@ In the heart of ancient Egypt, a mysterious tomb has been discovered, believed t
 
 http://64.227.121.142:6002/
 
-![](Pasted%20image%2020250430152139.png)
+![](TPCC_Input_Field.png)
 
 ```http
 POST /temple HTTP/1.1

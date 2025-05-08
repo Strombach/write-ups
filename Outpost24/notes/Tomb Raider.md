@@ -4,11 +4,22 @@ But beware, danger lurks around every corner...
 
 In the JavaScript we find this snippet:
 ```javascript
- const _0x2f8a = [
+const _0x2f8a = [
         '4p7l1', 'p07R3', 'S2x9Q', 'apply', 'qopI5',
         'ufn23', 'n465l', 'charAt', 'fromCharCode', 'length'
     ];
-
+    
+    function _0x19fe(s, k) {
+        let a = '';
+        for(let i = 0; i < s.length; i++) {
+            let c = s.charCodeAt(i);
+            if (c >= 65 && c <= 90) a += String.fromCharCode(((c - 65 + k) % 26) + 65);
+            else if (c >= 97 && c <= 122) a += String.fromCharCode(((c - 97 + k) % 26) + 97);
+            else a += s.charAt(i);
+        }
+        return a;
+    }
+    
     const _p1 = [79, 50, 52];
     const _p2 = [123, 49, 77, 95];
     const _p3 = [72, 52, 87, 33];
