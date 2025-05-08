@@ -16,8 +16,8 @@ Uploading an image the apps adds random string of characters in front of the ori
 Using the upload form to upload a image gives the redirects the user to the gallery page.  
 ![](../img/TPG_Upload.png)
 
-Image is needed here, because the markdown breaks when uploading to Github. But further request and responses the magic bytes are replaced with ```[magic bytes here]``` 
-![](TPG_jpgdata.png)
+!OBS! Image is needed here, because the markdown breaks when uploading to Github. But further request and responses the magic bytes are replaced with ```[magic bytes here]```!OBS!  
+![](../img/TPG_jpgdata.png)
 
 
 So to find the upload images the user need to browse the gallery or enter the ```/uploads``` endpoint to find the last uploaded image.  
