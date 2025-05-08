@@ -1,9 +1,9 @@
 Look at this magnificent scroll. It must be preserved at all cost.
 Let's bring it back to our exhibit.
-![](TPG_First.png)
+![](../img/TPG_First.png)
 
 
-![](TPG_Gallery.png)
+![](../img/TPG_Gallery.png)
 
 !OBS! Image is needed here, because the markdown breaks when uploading to Github. But further request and responses the magic bytes are replaced with ```[magic bytes here]```!OBS!  
 ![](../img/TPG_jpgdata.png)
@@ -46,10 +46,10 @@ Cookie: session=eyJfZmxhc2hlcyI6W3siIHQiOlsibWVzc2FnZSIsIk9ubHkgaW1hZ2UgZmlsZXMg
 Connection: keep-alive
 ```
 
-![](TPG_Uploads.png)
+![](../img/TPG_Uploads.png)
 
 
-![](TPG_Accessing_web_shell.png)
+![](../img/TPG_Accessing_web_shell.png)
 
 ```http
 GET /uploads/c074188ba97ebf54_test_shell_data.php.jpg/?command=cat%20/etc/passwd HTTP/1.1
@@ -149,7 +149,7 @@ app.config['FLAG'] = 'O24{Th3_Phar40h_Kn0ws_Y0ur_P0lygl0t_Tr1cks}'
 ```
 
 
-![](TPG_Enter_PW.png)
+![](../img/TPG_Enter_PW.png)
 
 
-![](TPG_Solved.png)
+![](../img/TPG_Solved.png)

@@ -2,7 +2,7 @@ Deep within an ancient temple, offerings must be made to gain the gods' favor. T
 
 With clever hands and the right format, perhaps you can slip in something more… divine. If your offering is accepted and interpreted correctly, the gods may whisper their secrets.
 
-![](TheTempleOfThoth_Hint.png)
+![](../img/TheTempleOfThoth_Hint.png)
 
 Hint:
 The sacred inscriptions are safeguarded by deception, but an addition might deceive the temple's guardians.

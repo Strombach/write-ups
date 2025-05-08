@@ -2,7 +2,7 @@ Trapped! Trapped in a large tomb with thousands of coffins we need to find a way
 
 (Bruteforceing allowed, but keep the number of requests/seconds low.)
 
-![](Ancient_Tomb_App_Click_Tomb.png)
+![](../img/Ancient_Tomb_App_Click_Tomb.png)
 
 
 ```http

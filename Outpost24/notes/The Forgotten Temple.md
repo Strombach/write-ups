@@ -1,4 +1,4 @@
-![](Outpost24/img/The_Forgotten_Temple_Login_Form.png)
+![](../img/The_Forgotten_Temple_Login_Form.png)
 
 Clicking "The Scroll of Gods" button we download a txt file called usernames.txt
 
@@ -47,7 +47,7 @@ In page source:
 Successful login:
 Anubis:deathgod123
 
-![](The_Forgotten_Temple_Reset_Pw.png)
+![](../img/The_Forgotten_Temple_Reset_Pw.png)
 
 
 
@@ -75,7 +75,7 @@ Let's use the intruder to find the "true ruler".
 
 Anubis and Khonsu gives this error of "Incorrect password" so this to account could be targeted. But the comment only mentions Anubis to login for reseting password. Let's try to reset the password with our second found user (Khonsu).
 
-![](The_Forgotten_Temple_Intruder.png)
+![](../img/The_Forgotten_Temple_Intruder.png)
 
 ```
 <!-- Right section: Login + Password Reset (for Anubis) -->
@@ -114,7 +114,7 @@ Connection: close
 
 By using a cookie we can change the password for "Khonsu". So the cookie isn't tied to a user session.
 
-![](The_Forgotten_Temple_Solved.png)
+![](../img/The_Forgotten_Temple_Solved.png)
 
 Flag: O24{73mp13_53cr37s_Unv31l3d}
 

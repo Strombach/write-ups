@@ -157,7 +157,7 @@ Vary: Cookie
 ```
 
 Sacred name = Seti-Thutmose-the-Great
-![](TLTOPA_Speak_Name.png)
+![](../img/TLTOPA_Speak_Name.png)
 
-![](TLTOPA_Solved.png)
+![](../img/TLTOPA_Solved.png)
 Flag: O24{4nkh_th3_k3y_0f_l1f3_unl0ck5_7h3_s4cr3d_t0mb}

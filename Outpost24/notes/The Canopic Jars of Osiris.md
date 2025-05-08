@@ -4,13 +4,13 @@ Your first challenge: "Only those who understand the whispers of the past may cl
 
 After a thrilling journey, you finally found it, unlocking the jar and revealing the long-lost knowledge of Osiris.
 
-![](TCJOO_App.png)
+![](../img/TCJOO_App.png)
 
-![](TCJOO_Entered.png)
+![](../img/TCJOO_Entered.png)
 
 
-![](TCJOO_Hint.png)
-![](TCJOO_Base64_encoded.png)
-![](TCJOO_Solved.png)
+![](../img/TCJOO_Hint.png)
+![](../img/TCJOO_Base64_encoded.png)
+![](../img/TCJOO_Solved.png)
 
 O24{soul_of_osiris_bound_within_the_cursed_vessel}

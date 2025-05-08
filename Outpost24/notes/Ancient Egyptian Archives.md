@@ -118,4 +118,4 @@ if (validRanks.indexOf(a) >= 0 && b === 'true') {
 
 
 So let set our localStorage to the approved values
-![](AEA_Solved.png)
+![](../img/AEA_Solved.png)
