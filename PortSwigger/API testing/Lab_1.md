@@ -1,3 +1,4 @@
+# Lab: Exploiting an API endpoint using documentation
 To solve the lab, find the exposed API documentation and delete `carlos`. You can log in to your own account using the following credentials: `wiener:peter`.
 
 #### Required knowledge
@@ -59,4 +60,5 @@ Content-Length: 25
 
 
 
-![](./img/Lab_1_Solved%201.png)
+![](./img/
+Lab_1_Solved%201.png)
